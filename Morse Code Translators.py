@@ -1,9 +1,7 @@
 
-phrase = input("Put your sentence or word in english here: ")
-
-
-def translator(phrase):
+def translator():
   translation = ""
+  phrase = input("Put your sentence or word in english here: ")
 
   for phrase in phrase.upper():
     word_translation = {
@@ -49,10 +47,15 @@ def translator(phrase):
       "+": "•-•-• ",
       "=": "-•••- ",
       "/": "-••-• "
-
     }[phrase]
     translation += word_translation
   print(translation)
-  print('Space between letters is denoted by " " and space between words is denoted by "|" also, "." is denoted by "." itself')
 
-translator(phrase)
+
+def run_function():
+    print('Space between letters is denoted by " " and space between words is denoted by "|" also, "." is denoted by "." itself')
+    for rerun in range(100):
+        translator()
+
+
+run_function()
