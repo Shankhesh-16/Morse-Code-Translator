@@ -54,7 +54,7 @@ def translator():
 
 def run_function():
     print('Space between letters is denoted by " " and space between words is denoted by "|" also, "." is denoted by "." itself')
-    for rerun in range(100):
+    for rerun in range(1000):
         translator()
 
 
